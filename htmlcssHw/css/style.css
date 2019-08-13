@@ -1,0 +1,332 @@
+/*CSS RESET START*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS RESET END*/
+/* CSS RESET SETTING START */
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body{
+	font-family: 'Times New Roman', Arial, Verdana, '微軟正黑體';
+}
+
+/* CSS修改HTML input placholder顏色 */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+	color: #000;
+}
+input:-moz-placeholder, textarea:-moz-placeholder{
+	color: #000;
+}
+input::-moz-placeholder, textarea::-moz-placeholder{
+	color: #000;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder{
+	color: #000;
+}
+/* Webkit browsers */
+/* Mozilla Firefox 4~18 */
+/* Mozilla Firefox 19+ */
+/* Internet Explorer 10+ */
+
+/* Clear 清除浮動 */
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/* CSS RESET SETTING END*/
+/* CSS STYLE START */
+.wrap{
+	width: 960px;
+	margin: 10px auto;
+}
+/* .bar style start */
+.bar{
+	background: #f6f6f6;
+	margin-bottom: 5px;
+}
+.bar ul{
+	float: right;
+	padding-right: 15px;
+}
+.bar ul li{
+	float: left;
+	padding-right: 10px;
+}
+.bar li a:hover{
+	color: #3fb5ed;
+}
+.bar li img{
+	padding-right: 5px;
+	float: left;
+}
+.bar li span{
+	float: left;
+}
+.facebook{
+	border-right: 1px solid #cccccc;
+	margin-right: 10px;
+}
+/* .header style start */
+.header{
+	padding: 5px 0;
+	background: #ffffff;
+}
+.header .logo{
+	float: left;
+}
+.header .logo a{
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	width: 224px;
+	height: 50px;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.header .menu{
+	float: right;
+	padding-right: 20px;
+	padding-top: 10px;
+}
+.header .menu li{
+	float: left;
+	padding-right: 15px;
+}
+.header .menu li a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #42d3a9;
+	padding: 10px;
+}
+.header .menu li a:hover{
+	border-bottom: 2px solid #00cc99;
+}
+/* .banner style start */
+.banner{
+	background-image: url("../img/banner.png");
+	width: 960px;
+	height: 346px;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-bottom: 30px;
+}
+.solgan h2{
+	font-size: 36px;
+	line-height: 1.5;
+	color: #fff;
+	background-color: #020202;
+	opacity: 0.6;
+	padding: 30px 0 30px 10px;
+	width: 100%;
+	position: absolute;
+	top: 89px;
+}
+/* .introList style start */
+.introList{
+	margin-bottom: 30px;
+}
+.introList > ul{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.introList ul .item{
+	float: left;
+	width: 280px;
+	height: 340px;
+	border: 1px solid #d7d7d7;
+	box-shadow: 0px 3px 3px #d7d7d7;
+	margin: 10px;
+	background: #ffffff;
+}
+.introList li ul li{
+	list-style-type: disc;
+	list-style-position: inside;
+	padding-left: 5px;
+	line-height: 1.5;
+}
+.introList li h3{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
+}
+.introList .item p{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 5px;
+	text-align: center;
+	line-height: 1.5;
+}
+.introList .item span{
+	padding-left: 5px;
+	line-height: 1.5;
+	display: block;
+}
+.imgbox{
+	width: 240px;
+	height: 150px;
+	margin: 4px;
+}
+.imgbox img{
+	display: block;
+	margin: 10px auto;
+}
+/* .course style start */
+.course{
+	margin-bottom: 30px;
+}
+.course h2{
+	font-size: 36px;
+	text-align: center;
+	padding: 20px 0;
+}
+.course .price th,.course .price td{
+	border-bottom: 1px solid #d7d7d7;
+	border-top: 1px solid #d7d7d7;
+	padding: 10px;
+	width: 200px;
+	text-align: left;
+	text-indent: 24px;
+}
+.course .price th{
+	font-weight: bold;
+	background: #ffffff;
+}
+.price{
+	margin-left: auto;
+	margin-right: auto;
+}
+.green{
+	color: #42b392;
+}
+/* .contact style start */
+.contact{
+	background: linear-gradient(left, #00644b, #009771);
+	background: -webkit-linear-gradient(left, #00644b, #009771);
+	background: -moz-linear-gradient(left, #00644b, #009771);
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 30px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.contact h2{
+	font-size: 32px;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 15px;
+	line-height: 1.5;
+}
+.contact textarea{
+	width: 500px;
+	height: 300px;
+	float: left;
+	padding-left: 5px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.formBox{
+	float: left;
+	width: 360px;
+	margin-left: 50px;
+}
+.formBox label{
+	font-size: 20px;
+	color: #fff;
+	width: 200px;
+}
+.formBox input{
+	font-size: 20px;
+	padding-left: 5px;
+	margin: 10px 0;
+	width: 360px;
+	border-radius: 5px;
+}
+.formBox .btn{
+	background: #00cc99;
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	border: 0;
+	cursor: pointer;
+	width: 80px;
+	height: 30px;
+}
+.formBox .btn:hover{
+	background: #000;
+}
+/* .footer style start */
+.footer{
+	padding: 30px;
+}
+.footer img{
+	float: left;
+}
+.footer p{
+	float: right;
+	line-height: 1.5;
+}
+.footer p span{
+	color: #e12d80;
+}
+/* CSS STYLE END */
+
